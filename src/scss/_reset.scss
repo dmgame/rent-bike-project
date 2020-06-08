@@ -25,7 +25,15 @@ a {
   text-decoration: none;
 }
 
+input,
+textarea {
+  background-color: transparent;
+  border: 0;
+  outline: none;
+}
+
 button {
+  background-color: transparent;
   border: 0;
   cursor: pointer;
   outline: none;

@@ -240,6 +240,17 @@ $edit-icon-gray-total-width: 375px;
 $edit-icon-gray-total-height: 368px;
 $edit-icon-gray-image: '../images/sprite.png';
 $edit-icon-gray: (333px, 36px, -333px, -36px, 33px, 33px, 375px, 368px, '../images/sprite.png', 'edit-icon-gray', );
+$eng-flag-icon-name: 'eng-flag-icon';
+$eng-flag-icon-x: 33px;
+$eng-flag-icon-y: 322px;
+$eng-flag-icon-offset-x: -33px;
+$eng-flag-icon-offset-y: -322px;
+$eng-flag-icon-width: 20px;
+$eng-flag-icon-height: 20px;
+$eng-flag-icon-total-width: 375px;
+$eng-flag-icon-total-height: 368px;
+$eng-flag-icon-image: '../images/sprite.png';
+$eng-flag-icon: (33px, 322px, -33px, -322px, 20px, 20px, 375px, 368px, '../images/sprite.png', 'eng-flag-icon', );
 $google-play-icon-name: 'google-play-icon';
 $google-play-icon-x: 333px;
 $google-play-icon-y: 110px;
@@ -386,7 +397,7 @@ $windows-store-icon: (333px, 74px, -333px, -74px, 33px, 31px, 375px, 368px, '../
 $spritesheet-width: 375px;
 $spritesheet-height: 368px;
 $spritesheet-image: '../images/sprite.png';
-$spritesheet-sprites: ($action-camera-icon, $additional-accessories-icon-blue, $additional-accessories-icon-gray, $additional-accessories-icon, $american-express-logo-, $apple-icon, $bike-parameters-icon-2-gray, $bike-parameters-icon-2, $bike-parameters-icon-blue, $bike-parameters-icon-gray, $bike-parameters-icon, $bike-type-sport-icon, $blockquote-big-icon, $cart-icon-cuted, $cart-icon, $cup-icon, $customize-icon, $date-icon, $dead-keyboard-icon, $delivery-icob, $edit-icon-gray, $google-play-icon, $logo-icon-big, $logo-icon-sm, $map-logo-icon, $master-card-logo, $mouse-icon, $place-icon-sm, $protection-icon, $quote-icon, $time-icon, $visa-logo, $wheel-icon-, $windows-store-icon, );
+$spritesheet-sprites: ($action-camera-icon, $additional-accessories-icon-blue, $additional-accessories-icon-gray, $additional-accessories-icon, $american-express-logo-, $apple-icon, $bike-parameters-icon-2-gray, $bike-parameters-icon-2, $bike-parameters-icon-blue, $bike-parameters-icon-gray, $bike-parameters-icon, $bike-type-sport-icon, $blockquote-big-icon, $cart-icon-cuted, $cart-icon, $cup-icon, $customize-icon, $date-icon, $dead-keyboard-icon, $delivery-icob, $edit-icon-gray, $eng-flag-icon, $google-play-icon, $logo-icon-big, $logo-icon-sm, $map-logo-icon, $master-card-logo, $mouse-icon, $place-icon-sm, $protection-icon, $quote-icon, $time-icon, $visa-logo, $wheel-icon-, $windows-store-icon, );
 $spritesheet: (375px, 368px, '../images/sprite.png', $spritesheet-sprites, );
 
 // The provided mixins are intended to be used with the array-like variables
