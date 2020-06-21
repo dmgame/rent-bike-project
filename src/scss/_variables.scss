@@ -15,6 +15,7 @@ $secondary-font: 'norwesterregular', sans-serif;
 // Text Colors
 $text-gray: #a6a6a6;
 $text-blue: #435566;
+$text-light-blue: #869db2;
 $text-white: #fff;
 $text-green: #9c0;
 
@@ -104,5 +105,19 @@ $blockquote-author-fz-sm: 1.5rem;
 $footer-subscribe-bg: #304152;
 $footer-contacts-bg: #304152;
 
-
+// Buttons
+$btn-ff: $secondary-font;
+$btn-fz-lg: 2.5rem;
+$btn-fz-sm: 1.8rem;
+$btn-default-bg: #658099;
+$btn-default-bg-hover: #9c0;
+$btn-default-text-color: #fff;
+$btn-secondary-bg: #435566;
+$btn-secondary-bg-hover: #9c0;
+$btn-secondary-text-color: #fff;
+$btn-primary-bg: #9c0;
+$btn-primary-bg-hover: #7ca600;
+$btn-primary-text-color: #fff;
+$btn-disabled-bg: #cbced2;
+$btn-disabled-text-color: #fff;
 
