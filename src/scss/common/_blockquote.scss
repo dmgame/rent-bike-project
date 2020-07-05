@@ -1,5 +1,6 @@
 .blockquote {
   background-color: $blockquote-bg;
+  height: 100%;
   position: relative;
 
   &::after {
