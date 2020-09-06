@@ -4608,13 +4608,13 @@ button {
 
 .additional-accessories-icon-blue {
   background-image: url(../images/sprite.png);
-  background-position: -217px -187px;
+  background-position: -274px -187px;
   width: 52px;
   height: 49px; }
 
 .additional-accessories-icon-gray {
   background-image: url(../images/sprite.png);
-  background-position: -274px -187px;
+  background-position: -217px -187px;
   width: 52px;
   height: 49px; }
 
@@ -4626,7 +4626,7 @@ button {
 
 .american-express-logo_ {
   background-image: url(../images/sprite.png);
-  background-position: -236px 0px;
+  background-position: -236px -63px;
   width: 92px;
   height: 58px; }
 
@@ -4638,25 +4638,25 @@ button {
 
 .bike-parameters-icon-2-gray {
   background-image: url(../images/sprite.png);
-  background-position: -236px -126px;
+  background-position: -89px -105px;
   width: 53px;
   height: 53px; }
 
 .bike-parameters-icon-2 {
   background-image: url(../images/sprite.png);
-  background-position: -89px -105px;
+  background-position: -236px -126px;
   width: 53px;
   height: 53px; }
 
 .bike-parameters-icon-blue {
   background-image: url(../images/sprite.png);
-  background-position: -97px -187px;
+  background-position: -157px -187px;
   width: 55px;
   height: 49px; }
 
 .bike-parameters-icon-gray {
   background-image: url(../images/sprite.png);
-  background-position: -157px -187px;
+  background-position: -97px -187px;
   width: 55px;
   height: 49px; }
 
@@ -4702,9 +4702,15 @@ button {
   width: 29px;
   height: 21px; }
 
-.date-icon {
+.date-icon-green {
   background-image: url(../images/sprite.png);
   background-position: -89px -163px;
+  width: 19px;
+  height: 19px; }
+
+.date-icon {
+  background-image: url(../images/sprite.png);
+  background-position: -113px -163px;
   width: 19px;
   height: 19px; }
 
@@ -4758,7 +4764,7 @@ button {
 
 .master-card-logo {
   background-image: url(../images/sprite.png);
-  background-position: -236px -63px;
+  background-position: 0px -187px;
   width: 92px;
   height: 58px; }
 
@@ -4788,13 +4794,13 @@ button {
 
 .time-icon {
   background-image: url(../images/sprite.png);
-  background-position: -113px -163px;
+  background-position: -137px -163px;
   width: 17px;
   height: 17px; }
 
 .visa-logo {
   background-image: url(../images/sprite.png);
-  background-position: 0px -187px;
+  background-position: -236px 0px;
   width: 92px;
   height: 58px; }
 
@@ -6680,3 +6686,328 @@ button {
     opacity: 1; }
   .selectric-items .selectric-group li {
     padding-left: 25px; }
+
+/*
+  All a user has to do to change the calendar size is
+  change the font-size on the container and everything
+  magically resizes accordingly. Relative units ftw!
+*/
+.date-picker-control__label {
+  color: #a3d900;
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 5px; }
+
+.date-picker-control__input-wrap {
+  position: relative; }
+
+.date-picker-control__input {
+  background-color: transparent;
+  border-bottom: 2px solid #9c0;
+  border-top: 2px solid #9c0;
+  color: #9c0;
+  font-family: "norwesterregular", sans-serif;
+  font-size: 1.8rem;
+  height: 43px;
+  padding-left: 10px;
+  padding-right: 30px;
+  text-transform: uppercase;
+  width: 100%; }
+
+.date-picker-control__icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
+
+.qs-datepicker-container {
+  background: #232f3b;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: sans-serif;
+  font-size: 1rem;
+  overflow: hidden;
+  position: absolute;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 285px;
+  z-index: 9001; }
+
+.qs-centered {
+  left: 50%;
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+.qs-hidden {
+  display: none; }
+
+.qs-overlay {
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  left: 0;
+  opacity: 1;
+  padding: 0.5em;
+  position: absolute;
+  top: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  width: 100%;
+  z-index: 1; }
+  .qs-overlay.qs-hidden {
+    opacity: 0;
+    z-index: -1; }
+  .qs-overlay .qs-overlay-year {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    border-radius: 0;
+    color: #fff;
+    display: block;
+    font-size: 15.96px;
+    margin: 0 auto;
+    padding: 0.25em 0;
+    text-align: center;
+    width: 80%; }
+    .qs-overlay .qs-overlay-year::-webkit-inner-spin-button {
+      -webkit-appearance: none; }
+  .qs-overlay .qs-close {
+    cursor: pointer;
+    padding: 0.5em;
+    position: absolute;
+    right: 0;
+    top: 0; }
+  .qs-overlay .qs-submit {
+    background: rgba(128, 128, 128, 0.4);
+    border: 1px solid white;
+    border-radius: 0;
+    cursor: pointer;
+    margin: 0 auto auto;
+    padding: 0.5em; }
+    .qs-overlay .qs-submit.qs-disabled {
+      border-color: gray;
+      color: gray;
+      cursor: not-allowed; }
+  .qs-overlay .qs-overlay-month-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .qs-overlay .qs-overlay-month {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    opacity: 0.5;
+    -webkit-transition: opacity 0.15s;
+    transition: opacity 0.15s;
+    width: calc(100% / 3); }
+    .qs-overlay .qs-overlay-month.active, .qs-overlay .qs-overlay-month:hover {
+      opacity: 1; }
+
+.qs-controls {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #232f3b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-filter: blur(0);
+          filter: blur(0);
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  height: 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: -webkit-filter 0.3s;
+  transition: -webkit-filter 0.3s;
+  transition: filter 0.3s;
+  transition: filter 0.3s, -webkit-filter 0.3s;
+  width: 100%; }
+  .qs-controls.qs-blur {
+    -webkit-filter: blur(5px);
+            filter: blur(5px); }
+
+.qs-arrow {
+  cursor: pointer;
+  height: 35px;
+  position: relative;
+  -webkit-transition: background 0.15s;
+  transition: background 0.15s;
+  width: 35px; }
+  .qs-arrow:hover::after {
+    color: #9c0; }
+  .qs-arrow::after {
+    color: #fff;
+    content: '';
+    font-family: 'Font Awesome 5 Free';
+    font-size: 2rem;
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    -webkit-transition: border 0.2s;
+    transition: border 0.2s; }
+  .qs-arrow.qs-left::after {
+    content: '\f104';
+    right: 50%;
+    -webkit-transform: translate(25%, -50%);
+            transform: translate(25%, -50%); }
+  .qs-arrow.qs-right::after {
+    content: '\f105';
+    left: 50%;
+    -webkit-transform: translate(-25%, -50%);
+            transform: translate(-25%, -50%); }
+
+.qs-month-year {
+  color: #9c0;
+  cursor: pointer;
+  font-family: "norwesterregular", sans-serif;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  -webkit-transition: border 0.2s;
+  transition: border 0.2s; }
+  .qs-month-year:focus, .qs-month-year:active:focus {
+    outline: none; }
+
+.qs-month {
+  padding-right: 0.5ex; }
+
+.qs-year {
+  padding-left: 0.5ex; }
+
+.qs-squares {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-filter: blur(0);
+          filter: blur(0);
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-transition: -webkit-filter 0.3s;
+  transition: -webkit-filter 0.3s;
+  transition: filter 0.3s;
+  transition: filter 0.3s, -webkit-filter 0.3s; }
+  .qs-squares.qs-blur {
+    -webkit-filter: blur(5px);
+            filter: blur(5px); }
+
+.qs-square {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #2e3c4a;
+  border-radius: 0;
+  color: #a6acb3;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "norwesterregular", sans-serif;
+  font-size: 1.5rem;
+  height: 38px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: background 0.1s;
+  transition: background 0.1s;
+  width: calc(100% / 7); }
+  .qs-square:not(.qs-empty):not(.qs-disabled):not(.qs-day):not(.qs-active):hover {
+    color: #9c0; }
+
+.qs-current {
+  font-weight: bold;
+  text-decoration: underline; }
+
+/*
+  3 possibilities:
+    1. Single, active date.
+    2. Daterange start selection.
+    3. Daterange end selection.
+*/
+.qs-active,
+.qs-range-start,
+.qs-range-end {
+  background: #9c0;
+  color: #fff; }
+
+.qs-range-start:not(.qs-range-6) {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0; }
+
+.qs-range-middle {
+  background: #d4ebf2; }
+  .qs-range-middle:not(.qs-range-0):not(.qs-range-6) {
+    border-radius: 0; }
+  .qs-range-middle.qs-range-0 {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0; }
+  .qs-range-middle.qs-range-6 {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0; }
+
+.qs-range-end:not(.qs-range-0) {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0; }
+
+.qs-disabled,
+.qs-outside-current-month {
+  color: #384858; }
+
+.qs-disabled {
+  cursor: not-allowed; }
+
+.qs-empty {
+  cursor: default; }
+
+.qs-day {
+  background-color: #384858;
+  color: #fff;
+  cursor: default;
+  font-family: "norwesterregular", sans-serif;
+  font-size: 1.5rem;
+  height: 43px; }
+
+.qs-event {
+  position: relative; }
+  .qs-event::after {
+    background: #07f;
+    border-radius: 50%;
+    bottom: 0;
+    content: '';
+    height: 8.55px;
+    position: absolute;
+    right: 0;
+    width: 8.55px; }
