@@ -63,10 +63,9 @@ $slick-arrow-hover-bg: $bg-green;
 
 /* Arrows */
 
-.slick-prev,
-.slick-next {
+.slick-arrow {
   background: $slick-arrow-bg;
-  border: none;
+  border: 0;
   color: transparent;
   cursor: pointer;
   display: block;
@@ -77,10 +76,9 @@ $slick-arrow-hover-bg: $bg-green;
   padding: 0;
   position: absolute;
   top: 50%;
-  -webkit-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
   transform: translate(0, -50%);
   width: 45px;
+  z-index: 99;
 
   &:hover,
   &:focus {
