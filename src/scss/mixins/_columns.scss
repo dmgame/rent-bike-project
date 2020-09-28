@@ -9,6 +9,11 @@
     padding-right: $gutter / 2;
     position: relative;
     width: 100%;
+
+    &--no-gutter {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 
   // 2. сгенерироввать 12 классов с шириной

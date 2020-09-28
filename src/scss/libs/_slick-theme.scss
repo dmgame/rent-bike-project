@@ -80,6 +80,16 @@ $slick-arrow-hover-bg: $bg-green;
   width: 45px;
   z-index: 99;
 
+  &--medium {
+    height: 46px;
+    width: 46px;
+  }
+
+  &--static {
+    position: static;
+    transform: none;
+  }
+
   &:hover,
   &:focus {
     background: $slick-arrow-hover-bg;
