@@ -5399,6 +5399,10 @@ button {
   left: 0;
   right: auto; }
 
+.achievement-item__counter {
+  color: #000;
+  font-size: 7rem; }
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -6309,9 +6313,27 @@ button {
   left: 0;
   padding-bottom: 25px;
   padding-top: 16px;
-  position: fixed;
+  position: absolute;
   top: 0;
-  width: 100%; }
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  width: 100%;
+  will-change: position;
+  z-index: 99; }
+  .header.is-fixed {
+    background-color: #000;
+    position: fixed;
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+    -webkit-transition: -webkit-transform 0.2s ease-out;
+    transition: -webkit-transform 0.2s ease-out;
+    transition: transform 0.2s ease-out;
+    transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
+    will-change: transform;
+    z-index: 999; }
+    .header.is-fixed.show-header {
+      -webkit-transform: translateY(0);
+              transform: translateY(0); }
 
 .header-controls__item + .header-controls__item {
   margin-left: 45px; }

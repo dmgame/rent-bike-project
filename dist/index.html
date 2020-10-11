@@ -551,9 +551,7 @@
           <!-- TODO Home work -->
           <style>
             .gradient-example {
-              background: linear-gradient(135deg,
-              #fff 94%,
-              transparent 94%);
+              background: linear-gradient(135deg, #fff 94%, transparent 94%);
               /* background-color: #fff; */
               height: 300px;
               width: 300px;
@@ -565,6 +563,24 @@
         <!-- /.container -->
       </section>
       <!-- /.page-section -->
+      <section class="page-section achievements-section">
+        <div class="container">
+          <div class="row">
+            <div class="col col-3">
+              <div class="achievement-item">
+                <div id="counter-item-1" class="achievement-item__counter">
+                  0
+                </div>
+              </div>
+              <!-- /.achievement-item -->
+            </div>
+            <!-- /.col col-3 -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.page-section achievements-section -->
     </main>
     <!-- /.main -->
 
@@ -575,6 +591,8 @@
     ></script>
 
     <script src="js/slick.min.js"></script>
+    <script src="js/header-on-scroll.js"></script>
+    <script type="module" src="js/countUpInit.js"></script>
 
     <script>
       $(document).ready(function () {
